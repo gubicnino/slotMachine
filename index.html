@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h1>Slot Machine</h1>
+            <div class="buttonWrapper">
+                <input id="balanceInput" placeholder="Enter balance">
+                <button id="setBalanceButton">Set Balance</button>
+            </div>
+            <p id="currentBalance">Your total balance is: 0</p>
+            <div class="itemWrapper">
+                <p>Select the amount of lines you want to bet on!</p>
+                <div class="buttonWrapper">
+                    <button onclick="selectLineAmount(1)">1</button>
+                    <button onclick="selectLineAmount(2)">2</button>
+                    <button onclick="selectLineAmount(3)">3</button>
+                </div>
+                <p id="numberOfLines">Your total amount of lines is: 1</p>
+            </div>
+            <div class="itemWrapper">
+                <p>Select the amount you want to bet per line!</p>
+                <div class="buttonWrapper">
+                    <button onclick="updateTotalBet(1)">+1</button>
+                    <button onclick="updateTotalBet(10)">+10</button>
+                    <button onclick="updateTotalBet(100)">+100</button>
+                    <button onclick="updateTotalBet(1000)">+1000</button>
+                </div>
+                <button id="resetBetAmount" onclick="resetBetAmount()">Set to 0</button>
+                <p id="currentTotalBet">Your total bet is: 0</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="centererWrapper">
+                <div id="spinContainer"></div>
+            </div>
+            <button id="spinButton" onclick="spin()">Spin</button>
+            <p id="currentWinnings">You won: 0</p>
+        </div>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>

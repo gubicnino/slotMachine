@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #111;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    display: flex;
+    gap: 80px;
+    max-width: 1200px;
+    width: 100%;
+    min-height: 80vh;
+    margin: 128px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: #FFD700;
+    margin-bottom: 30px;
+}
+
+p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    width: 100%;
+}
+
+.centererWrapper{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.itemWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #FFC107;
+    transform: scale(1.05);
+}
+
+.buttonWrapper button {
+    flex-grow: 1;
+}
+
+#spinContainer {
+    padding: 20px;
+    min-height: 100px;
+
+}
+
+#spinContainer p {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #FFD700;
+}
+
+#spinButton {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#spinButton:hover {
+    background-color: #FFC107;
+    transform: scale(1.05);
+}
+
+#currentBalance, #currentWinnings{
+    font-size: 24px;
+    color: #FFD700;
+}
+input {
+    background-color: #222;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+input:focus {
+    outline: none;
+    border-color: #FFC107;
+}
